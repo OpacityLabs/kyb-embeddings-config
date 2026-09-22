@@ -27,7 +27,7 @@ memory: 16384
 containers:
   - name: "embeddings"
     # Placeholder on main; the release workflow substitutes the built digest at the tag.
-    image: "ghcr.io/opacitylabs/kyb-embeddings:placeholder"
+    image: "ghcr.io/opacitylabs/kyb-embeddings@sha256:1043f8188433cfac16dbc217ff3e1422005ae42b5f680af4f612bfde52499555" # v1.0.2
     command:
       - "--model-id"
       - "/models/qwen3-embedding-0.6b"
